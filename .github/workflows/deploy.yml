@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: aluwoo/ZigBee
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.QUARTZ_CONTENT_ACCESS }}
           path: content
       - name: Clean up content directory
         run: |
