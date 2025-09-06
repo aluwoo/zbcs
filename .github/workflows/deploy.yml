@@ -24,7 +24,7 @@ jobs:
       - name: Checkout Content Repo
         uses: actions/checkout@v4
         with:
-          repository: git@github.com:aluwoo/ZigBee.git
+          repository: https://github.com/aluwoo/ZigBee.git
           token: '${{ secrets.ACCESS_TOKEN }}'
           path: content
       - name: Clean up content directory
