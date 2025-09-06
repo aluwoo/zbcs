@@ -8,17 +8,16 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "ZigBee协议栈学习笔记",
+    pageTitleSuffix: " - ZigBee学习",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "zh-CN",
     baseUrl: "https://aluwoo.github.io/zbcs",
-    // 添加这行配置
-    assetPrefix: "/zbcs/",
+    assetPrefix: "/zbcs",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
