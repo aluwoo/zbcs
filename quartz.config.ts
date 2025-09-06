@@ -16,7 +16,9 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "https://aluwoo.github.io/zbcs", // 替换为你的 GitHub Pages 地址
+    baseUrl: "https://aluwoo.github.io/zbcs",
+    // 添加这行配置
+    assetPrefix: "/zbcs/",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
