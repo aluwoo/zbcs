@@ -10,8 +10,8 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "ZigBee协议栈学习笔记",
     pageTitleSuffix: " - ZigBee学习",
-    enableSPA: true,
-    enablePopovers: true,
+    enableSPA: false,
+    enablePopovers: false,
     analytics: {
       provider: "plausible",
     },
@@ -21,8 +21,8 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
+      fontOrigin: "local",
+      cdnCaching: false,
       typography: {
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",
