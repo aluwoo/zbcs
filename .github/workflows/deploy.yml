@@ -41,11 +41,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build Quartz
-        run: npx quartz build
+        run: npm run quartz -- build
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: 'public'  # 确认此路径与Quartz的输出目录一致
   deploy:
     needs: build
     environment:

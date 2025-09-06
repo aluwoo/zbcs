@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "https://aluwoo.github.io/ZigBee", // 替换为你的 GitHub Pages 地址
+    baseUrl: "https://aluwoo.github.io/zbcs", // 替换为你的 GitHub Pages 地址
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -84,8 +84,8 @@ const config: QuartzConfig = {
         enableSiteMap: true,
         enableRSS: true,
       }),
-      Plugin.Assets(),
-      Plugin.Static(),
+      Plugin.Assets(),  // 负责生成CSS/JS资源
+      Plugin.Static(),  // 负责复制静态文件
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
